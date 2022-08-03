@@ -2,9 +2,9 @@ export class Form {
     constructor({
         element,
         defaultValues = {},
-        {
+        validation = {
             criteria,
-            {
+            fields: {
                 firstName: required,
                 lastName: {
                     maxLength: {
@@ -12,8 +12,8 @@ export class Form {
                         message
                     }
                 }
-            } = fields
-        } = validation ,
+            }
+        },
         fetcher
     }) {
         if (!element) throw Error('FUCK YOU');
