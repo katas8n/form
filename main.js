@@ -1,5 +1,5 @@
 import './style.css';
-import { Form, validateCriteria } from './classes/Form';
+import { Form } from './classes/Form';
 import { form } from './components/form';
 
 // document.querySelector('#app').innerHTML = `

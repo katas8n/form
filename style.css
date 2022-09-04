@@ -11,4 +11,51 @@
   color: #2c3e50;
   background-color: #2c3e50;
   height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  padding: 10rem;
+}
+
+input {
+  margin-top: 1.5rem;
+  padding: .2rem;
+  background-color: #2c3e50;
+  border: 2px solid rgb(17, 232, 175);
+  color: rgb(17, 232, 175);
+  font-family: sans-serif;
+  transition: 900ms border ease;
+  outline:none;
+}
+
+input:focus {
+  border: 2px solid rgb(194, 55, 194) ;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__submit {
+  align-self: center;
+}
+
+.btn ,
+.form__submit {
+  border-radius: .3rem;
+  border: 2px solid rgb(194, 55, 194);
+  color:rgb(194, 55, 194) ;
+  background-color: #2c3e50;
+  padding: .3rem;
+  margin-top: .5rem;
+  cursor: pointer;
+  transition: 900ms color border ease;
+}
+.btn:hover ,
+.form__submit:hover {
+  border: 2px solid rgb(55, 194, 157);
+  color:rgb(55, 194, 157) ;
+
 }

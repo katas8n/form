@@ -9,10 +9,22 @@
     <body>
         <div id="app">
             <form class="form">
-                <input type="text" id="firstVal" />
-                <input type="text" id="secondVal" />
+                <input
+                    autocomplete="off"
+                    type="text"
+                    id="firstname"
+                    value=""
+                    name="firstName"
+                />
+                <input
+                    autocomplete="off"
+                    type="text"
+                    id="lastname"
+                    value=""
+                    name="lastName"
+                />
 
-                <input type="submit" value="Send" />
+                <input class="form__submit" type="submit" value="Send" />
             </form>
         </div>
         <script type="module" src="/main.js"></script>
